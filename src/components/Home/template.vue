@@ -84,7 +84,7 @@
 				<p class="improColor">
 					* 需要更改的地方请先选中，后点击下发的A按钮选择红色； 需要取消标记的地方请先选中，后点击删除文字格式按钮
 				</p><br>
-				<el-form-item label="模板内容" style='width: 98.6%;height: 175px;'>
+				<el-form-item label="模板内容" style='width: 98.6%;height: 190px;'>
 					<div class="edit_container">
 						<quill-editor v-model="showData.modWord" ref="myQuillEditor" class="editer" :options="editorOption" @change="onEditorChange($event)" @ready="onEditorReady($event)">
 						</quill-editor>

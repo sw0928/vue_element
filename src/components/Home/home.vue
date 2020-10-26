@@ -68,6 +68,16 @@
 							<el-menu-item index="/order_list">详单列表</el-menu-item>
 						</el-menu-item-group>						
 					</el-submenu>
+					<el-submenu index="4">
+						<template slot="title">
+							<i class="el-icon-s-grid"></i>
+							<span slot="title">资源配置</span>
+						</template>						
+						<el-submenu index="4-1">
+				      <span slot="title">基础数据配置</span>
+				      <el-menu-item index="/sensitive_word">敏感词部署</el-menu-item>
+				    </el-submenu>
+					</el-submenu>
 				</el-menu>
 			</el-aside>
 			<el-main>	

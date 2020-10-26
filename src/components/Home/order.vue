@@ -24,16 +24,16 @@
 					<el-input v-model="ruleForm.content" placeholder="内容" @clear="clear" clearable></el-input>
 				</el-form-item>
 				<el-form-item class='seach'>
-					<el-button type="primary" @click.native.prevent="getTableList">查询</el-button>
+					<el-button type="primary" native-type="submit" @click.native.prevent="getTableList">查询</el-button>
 				</el-form-item>
 			</el-form>
 		</el-col>
 		<el-table v-loading="loading" :data="tableData" border style="width: 100%">
-			<el-table-column fixed prop="loginName" label="用户名" width="120">
+			<el-table-column fixed prop="loginName" label="用户名" width="100">
 			</el-table-column>
-			<el-table-column prop="createTime" label="下单时间" :formatter="formatter" width="200">
+			<el-table-column prop="createTime" label="下单时间" :formatter="formatter" width="160">
 			</el-table-column>
-			<el-table-column prop="submitFrom" label="下单来源" width="240">
+			<el-table-column prop="submitFrom" show-overflow-tooltip label="下单来源" width="140"> 
 			</el-table-column>
 			<el-table-column  label="内容" width="">
 				<template slot-scope="scope">
@@ -44,7 +44,7 @@
 			</el-table-column>
 			<el-table-column prop="submitMtTotal" label="提交总量" width="100">
 			</el-table-column>
-			<el-table-column prop="msisdn" label="号码" width="150">
+			<el-table-column prop="msisdn" label="号码" width="120">
 			</el-table-column>
 			<el-table-column prop="errorCode" label="错误代码" width="100">
 			</el-table-column>

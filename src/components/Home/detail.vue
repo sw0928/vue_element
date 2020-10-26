@@ -52,7 +52,13 @@
 				</el-form-item>
 			</el-form>
 		</el-col>
-		<el-table v-loading="loading" :data="tableData" tooltip-effect="light" border style="width: 100%">
+		<el-table v-loading="loading"
+			element-loading-text="拼命加载中"
+    	element-loading-spinner="el-icon-loading"
+    	element-loading-background="rgba(0, 0, 0, 0.8)"
+     	:data="tableData" 
+     	tooltip-effect="light" 
+     	border style="width: 100%">
 			<el-table-column fixed prop="orderSn" label="订单号" width="180">
 			</el-table-column>
 			<el-table-column prop="loginName" label="用户名" width="80">

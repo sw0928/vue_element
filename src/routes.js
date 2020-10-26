@@ -9,6 +9,7 @@ import userManage from '@/components/userManage/user_manage'
 import operationList from '@/components/userManage/operation_list'
 import orderManage from '@/components/orderManage/order_manage'
 import orderList from '@/components/orderManage/order_list'
+import sensitiveWord from '@/components/resource/sensitive_word'
 
 let routes = [{
 		path: '/',
@@ -58,6 +59,10 @@ let routes = [{
 			{
 				path: '/order_list',
 				component: orderList
+			},
+			{
+				path: '/sensitive_word',
+				component: sensitiveWord
 			},
 		]
 	},

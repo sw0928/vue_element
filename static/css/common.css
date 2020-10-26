@@ -39,6 +39,10 @@ body {
 	.toolbar .el-form-item .el-form-item__label{
 		line-height: 20px;
 	}
+	
+ .toolbar .labalLh .el-form-item__label{
+		line-height: 32px;
+	}
 .toolbar .seach{
 		width: auto;
 		margin-top: 30px;
@@ -55,7 +59,7 @@ body {
    font-weight: 500;
 }
 .el-dialog .el-dialog__body{
-		padding: 0px 10px 0 20px;
+		padding: 0px 10px 10px 20px;
     margin: 0 20px 20px 20px;
     border: 1px solid #ccc;
     background: #f0f4f8;
@@ -92,4 +96,7 @@ body {
 	}
 .el-table__expanded-cell[class*=cell]{
 	padding: 10px 50px;
+}
+.el-radio{
+	margin-right: 15px;
 }

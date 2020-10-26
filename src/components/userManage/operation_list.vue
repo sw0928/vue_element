@@ -46,8 +46,7 @@
 					<el-button  type="primary" @click="management(scope.row)" size="small">权限管理</el-button>
 					<el-button  type="primary" @click="replacement(scope.row)"  size="small">重置密码</el-button>
 				</template>
-			</el-table-column>
-			
+			</el-table-column>			
 		</el-table>
 		<div class="block">
 			<el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="currentPage" background :page-sizes="[10,100, 200, 300, 400]" :page-size="10" layout="total, sizes, prev, pager, next, jumper" :total="total">

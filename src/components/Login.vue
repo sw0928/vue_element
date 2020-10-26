@@ -8,10 +8,10 @@
       <el-input type="password" v-model="ruleForm2.password" auto-complete="off" placeholder="密码"></el-input>
     </el-form-item>
     <el-form-item prop="code" label="动态验证码">
-      <el-input type="text" v-model="ruleForm2.code" auto-complete="off" placeholder="验证码" @keyup.enter.native.prevent="handleSubmit2"></el-input>
+      <el-input type="text" v-model="ruleForm2.code" auto-complete="off" placeholder="验证码"></el-input>
     </el-form-item>
     <el-form-item style="width:100%;text-align: center;">
-      <el-button type="primary"  @click.native.prevent="handleSubmit2" :loading="logining">登录</el-button>
+      <el-button type="primary" native-type="submit"  @click.native.prevent="handleSubmit2" :loading="logining">登录</el-button>
       <el-button @click.native.prevent="handleReset2">注册</el-button>
     </el-form-item>
   </el-form>

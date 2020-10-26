@@ -9,10 +9,11 @@ let qs=require('qs');
 //let bb = axios.create({
 //  headers: {dataType : 'json'}
 //});
-export const requestLogin = params => { return axios.post(`/api/login`, qs.stringify(params)).then(res => res.data); };
+export const requestLogin = params => { return axios.post(`/api/login`, params).then(res => res.data); };
 export const orderFailList = params => { return axios.post(`/api/icos/order/orderFailList`, params).then(res => res.data); };
 export const queryUserName = params => { return axios.post(`/api/icos/user/queryUserName`, qs.stringify(params)).then(res => res.data); };
 export const queryIsmgName = params => { return axios.post(`/api/icos/ismg/queryIsmgName`, qs.stringify(params)).then(res => res.data); };
+export const queryBizType = params => { return axios.post(`/api/icos/bizexpression/queryBizType`, qs.stringify(params)).then(res => res.data); };
 export const queryUserSendCountList = params => { return axios.post(`/api/icos/order/queryUserSendCountList`, params).then(res => res.data); };
 export const templateApplyList = params => { return axios.post(`/api/icos/template/templateApplyList`, params).then(res => res.data); };
 export const templateApply = params => { return axios.post(`/api/icos/template/templateApply`, params).then(res => res.data); };
@@ -25,6 +26,10 @@ export const queryUserDefultMenu = params => { return axios.post(`/api/icos/quer
 export const queryOrderManagerList = params => { return axios.post(`/api/icos/order/queryOrderManagerList`, params).then(res => res.data); };
 export const queryOrderDetailList = params => { return axios.post(`/api/icos/order/queryOrderDetailList`, params).then(res => res.data); };
 export const queryUserSendDetailList = params => { return axios.post(`/api/icos/order/queryUserSendDetailList`, params).then(res => res.data); };
+export const queryBizExpressionList = params => { return axios.post(`/api/icos/bizexpression/queryBizExpressionList`, params).then(res => res.data); };
+export const removeBizExpression = params => { return axios.post(`/api/icos/bizexpression/removeBizExpression`, qs.stringify(params)).then(res => res.data); };
+export const createBizExpression = params => { return axios.post(`/api/icos/bizexpression/createBizExpression`, params).then(res => res.data); };
+export const queryBizExpressionInfo = params => { return axios.post(`/api/icos/bizexpression/queryBizExpressionInfo`, qs.stringify(params)).then(res => res.data); };
 
 //export const getUserListPage = params => { return axios.get(`${base}/user/listpage`, { params: params }); };
 //
